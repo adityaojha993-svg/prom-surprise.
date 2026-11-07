@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf2f3">
+  <meta name="description" content="A little prom night surprise, made just for Netraja.">
+  <title>A Little Question for You 💜</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"><span class="petal p1">✿</span><span class="petal p2">❀</span><span class="petal p3">✿</span><span class="sparkle s1">✦</span><span class="sparkle s2">✧</span><span class="sparkle s3">✦</span></div>
+  <main class="experience" aria-live="polite">
+    <div class="topline"><span class="brand">a little something for you</span><div class="progress" aria-label="Screen progress"><span class="progress-fill"></span></div></div>
+    <section class="screen active" id="screen-1" aria-labelledby="welcome-title">
+      <div class="intro-copy"><p class="eyebrow">A tiny surprise, made with care</p><h1 id="welcome-title">Hey, Netraja! <span class="pink">💗</span></h1><p class="lead">Someone has a little surprise for you...</p></div>
+      <div class="envelope-scene" aria-label="A sealed letter waiting to be opened">
+        <div class="envelope" id="envelope"><div class="envelope-back"></div><div class="letter-preview"><span>For Netraja</span><span class="letter-heart">♡</span></div><div class="envelope-front"></div><div class="envelope-flap"></div><div class="seal">♡</div></div>
+        <span class="envelope-flower flower-a">✿</span><span class="envelope-flower flower-b">❀</span>
+      </div>
+      <button class="button primary" id="open-letter">Open your letter <span aria-hidden="true">💌</span></button>
+    </section>
+    <section class="screen" id="screen-2" aria-labelledby="letter-title" hidden>
+      <article class="letter-card">
+        <span class="orchid orchid-left" aria-hidden="true">✿</span><span class="orchid orchid-right" aria-hidden="true">❀</span>
+        <p class="eyebrow">A note from the heart</p><h2 id="letter-title">Dear Netraja,</h2>
+        <div class="letter-copy" id="letter-copy"><p>Some people have a way of making ordinary moments feel special. And somehow, you've become one of those people.</p><p>I wanted to do something different this time. Something that would make you smile and give you a memory worth keeping.</p><p>So, I made this little corner of the internet just for you.</p><p>And there's still something I haven't asked...</p></div>
+        <p class="signature">With a little courage,<br><span>Aditya 💜</span></p>
+      </article>
+      <div class="actions"><button class="button secondary back" data-back="1">← Back</button><button class="button primary" data-next="3">There's more... <span aria-hidden="true">✦</span></button></div>
+    </section>
+    <section class="screen" id="screen-3" aria-labelledby="gallery-title" hidden>
+      <p class="eyebrow">Little moments, kept close</p><h2 id="gallery-title">A few memories <span class="pink">♡</span></h2><p class="section-lead">Some moments are too lovely not to keep.</p>
+      <div class="gallery">
+        <button class="polaroid tilt-left" data-image="assets/memory-01.jpg" aria-label="Enlarge: A moment worth remembering"><span class="photo-wrap"><img src="assets/memory-01.jpg" alt="A shared moment to remember" loading="lazy"></span><span class="caption">A moment worth remembering</span><span class="tape"></span></button>
+        <button class="polaroid tilt-right" data-image="assets/memory-02.jpg" aria-label="Enlarge: The little things matter"><span class="photo-wrap"><img src="assets/memory-02.jpg" alt="A little thing that matters" loading="lazy"></span><span class="caption">The little things matter</span><span class="tape"></span></button>
+        <button class="polaroid tilt-left-little" data-image="assets/memory-03.jpg" aria-label="Enlarge: A memory in the making"><span class="photo-wrap"><img src="assets/memory-03.jpg" alt="A memory in the making" loading="lazy"></span><span class="caption">A memory in the making</span><span class="tape"></span></button>
+      </div>
+      <div class="actions"><button class="button secondary back" data-back="2">← Back</button><button class="button primary" data-next="4">One last question... <span aria-hidden="true">🌷</span></button></div>
+    </section>
+    <section class="screen question-screen" id="screen-4" aria-labelledby="question-title" hidden>
+      <div class="question-card"><span class="question-orchid" aria-hidden="true">✿</span><p class="eyebrow">From me, with all my heart</p><h2 id="question-title">Netraja,</h2><p class="question">Will you make my prom night a little more special with ur presence?</p>
+        <div class="answer-buttons"><button class="button yes" id="yes-button">YES <span aria-hidden="true">❤️</span></button><button class="button maybe" id="maybe-button">MAYBE? <span aria-hidden="true">🌼</span></button></div>
+        <p class="maybe-note" id="maybe-note" role="status" hidden>No pressure, take your time. Your answer matters. 🌼</p>
+      </div>
+      <div class="celebration" id="celebration" hidden><div class="celebration-heart">💗</div><p class="eyebrow">The happiest answer</p><h2>YOU MADE MY DAY! 💗</h2><p class="celebration-copy">I can't wait to make this prom night a beautiful memory with you.</p><p class="signature">With love,<br><span>Aditya 💜</span></p><button class="button secondary" id="return-question">Back to our question</button></div>
+      <div class="actions question-actions"><button class="button secondary back" data-back="3">← Back to memories</button></div>
+    </section>
+  </main>
+  <dialog class="lightbox" id="lightbox" aria-label="Expanded photograph"><button class="lightbox-close" aria-label="Close photograph">×</button><img src="" alt=""></dialog>
+  <div class="confetti-layer" id="confetti" aria-hidden="true"></div>
+</body>
+</html>
+
